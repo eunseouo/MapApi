@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        #target{
+            background-color: yellow;
+            position: static; 
+            /* static:기본,
+             absolute: relative 속성을 가진 가장 가까운 부모 태그를 기준으로 이동,없으면 자기 div 태그 기준,
+             relative: 요소 고려하여 상대적 위치 이동 
+             fixed: + bottom:0; => 푸터
+             sticky: 화면에 붙어서 이동
+             */
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>hello</div>
+    <div id="target">watch this</div>
+    <div>hello</div>
+</body>
+</html>

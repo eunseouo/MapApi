@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'TTCrownMychewR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+  font-family: 'TTCrownMychewR',cursive;
+
+}
+
+nav{
+  background-color:rgb(175,196,244) ;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem ;  /* rem: 상대적 단위 */ 
+}
+
+.nav-contact{
+  /* position: fixed;
+  right: 0; */   
+  /* 이렇게 하면 한 줄 내려가서 적용됨. */
+  border: 0;
+  background-color: transparent; /*none안먹힘*/
+  cursor: pointer;
+  font-family: inherit; /*버튼은 상속해줘야 폰트 적용*/
+}
+
+@media all and (min-width: 1024px) {
+  .inner{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
